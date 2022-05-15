@@ -1,0 +1,14 @@
+@import "partials/variables";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import "partials/header";
+
+@import "partials/main";
+@import "partials/swiper";
+
+@import "partials/footer";

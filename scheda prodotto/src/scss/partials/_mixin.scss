@@ -1,0 +1,46 @@
+@mixin flex-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin ancor-style($color-text) {
+    color: $color-text-2;
+    text-decoration: $reset-basic;
+}
+
+@mixin ancor-style-2 {
+    color: $color-text-1;
+    list-style-type: $reset-basic;
+    text-decoration: $reset-basic;
+}
+
+@mixin banner-footer {
+    color: $color-text-1;
+    background-color: $color-bg-banner;
+    text-align: center;
+    list-style-type: $reset-basic;
+
+}
+
+@mixin flex-banner {
+    display: flex;
+    justify-content: center;
+}
+
+// catalogo prodotti col 4
+@mixin grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 30px;
+    column-gap: 3px;
+}
+
+// catalogo prodotti col 6
+@mixin grid-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 3px;
+    row-gap: 10px;
+}

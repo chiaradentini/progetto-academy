@@ -1,0 +1,262 @@
+// variables
+@import "variables";
+
+// mixins
+@import "mixin";
+
+/* footer */
+
+/* carosello */
+.main-carosello {
+    background-color: #E5E5E5;
+    margin-bottom: 90px;
+}
+
+.carosello {
+    list-style-type: $reset-basic;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carosello-item {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 40px 60px;
+    width: 16, 66666666666667%;
+    background-color: $color-text-carosello;
+    text-align: center;
+}
+
+.carosello-item svg {
+    display: block;
+    margin: auto;
+}
+
+/* opzioni generali: iscrizione, help, company */
+.container-iscrizione {
+    padding: 0 60px;
+    @include flex-footer;
+}
+
+.iscrizione {
+    padding: 0 40px;
+    width: 50%;
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+#email {
+    font-size: 16px;
+    width: 80%;
+    height: 40px;
+    border: 0;
+    border-bottom: 2px solid $color-bg-banner;
+    margin-top: 60px;
+}
+
+.iscrizione-email {
+
+    button {
+        font-size: 16px;
+        color: $color-text-1;
+        background-color: $color-bg-button;
+        border: 0;
+        padding: 15px 30px;
+    }
+
+}
+
+.iscrizione-text {
+    font-size: 10px;
+    color: $color-bg-button;
+    margin-top: 40px;
+}
+
+/* option */
+.option {
+    width: 50%;
+    @include flex-footer;
+
+    .help,
+    .company {
+        list-style-type: $reset-basic;
+        font-size: 16px;
+        width: 50%;
+    }
+
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    a {
+        svg {
+            display: none;
+        }
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+.help-item-title,
+.company-item-title {
+    font-weight: bold;
+    @include ancor-style($color-text-1);
+}
+
+.help li,
+.company li {
+    list-style-type: none;
+    padding-bottom: 10px;
+
+    .help-item,
+    .company-item {
+        padding: 0 27px
+    }
+
+    .help-item,
+    .company-item {
+        @include ancor-style($color-text-2);
+    }
+}
+
+.show {
+    display: block;
+}
+
+/* icone social media */
+.social-icone {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 1.5%;
+    margin: 90px 0;
+}
+
+/* termini e condizioni, cookies policy footer */
+.banner-footer {
+    font-size: 10px;
+    @include banner-footer;
+    @include flex-banner;
+    gap: 20px;
+    padding: 10px;
+}
+
+.item-banner-foot {
+    font-size: 10px;
+    @include banner-footer;
+    @include flex-banner;
+    gap: 20px;
+
+    a {
+        font-size: 10px;
+        @include ancor-style-2;
+        font-weight: bold;
+    }
+}
+
+/*media query*/
+@media screen and (max-width: 768px) {
+
+    /* .carosello */
+    .carosello {
+        max-width: 375px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .carosello::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* iscrizione */
+    .container-iscrizione {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+
+        .iscrizione {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+    }
+
+    #email {
+        width: 100%;
+        height: 50px;
+        padding: 0 10px;
+    }
+
+    .iscrizione-email {
+        button {
+            margin-top: 40px;
+        }
+    }
+
+    .iscrizione-text {
+        margin-top: 20px;
+    }
+
+    /* option*/
+    .option {
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+
+        .help,
+        .company {
+            width: 100%;
+            background-color: #F5F5F5;
+        }
+    }
+
+
+    .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .help a>svg,
+    .company a>svg {
+        display: block;
+    }
+
+    /* accordion */
+    #help-collapse,
+    #company-collapse {}
+
+    .none {
+        display: none;
+    }
+
+    .show-item {
+        display: block;
+    }
+
+    /* social icone */
+    .social-icone {
+        margin: 60px 0;
+    }
+
+    /* banner footer */
+    .banner-footer {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .item-banner-foot {
+        margin-top: 5px;
+    }
+
+
+}

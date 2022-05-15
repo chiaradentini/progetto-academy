@@ -1,0 +1,16 @@
+{
+  "name": "scheda-prodotto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch src/scss:asset/css",
+    "sass-prod": "sass --no-source-map --style=compressed src/scss:asset/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
+}

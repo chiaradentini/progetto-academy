@@ -1,0 +1,18 @@
+@import "partials/variables";
+@import "partials/mixin";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+// header
+@import "partials/header";
+
+// main
+@import "partials/catalogo";
+
+// footer
+@import "partials/footer";

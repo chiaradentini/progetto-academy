@@ -1,0 +1,499 @@
+/* general style */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* header */
+
+/* banner discout */
+.banner-discount {
+    background-color: #000000;
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.text-banner {
+    color: #ffffff;
+    margin-right: 24px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.banner-discount button {
+    background-color: #000000;
+    border: 0;
+    position: absolute;
+    right: 12px;
+}
+
+/* nav */
+nav {
+    font-size: 18px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.nav-item {
+    margin: 0px 80px;
+    padding: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.nav-item-text {
+    color: #000000;
+    font-weight: bold;
+}
+
+nav .nav-item-icone {
+    display: none;
+}
+
+.brand-logo {
+    padding: 20px;
+    border: 2px dashed #808080;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* main */
+
+/* card 1 */
+.card-1 {
+    position: relative;
+}
+
+.card-1-image,
+.card-2-image,
+.card-3-image {
+    background-image: url(img/bg-card-1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 685px;
+}
+
+.card-1-text {
+    width: 35%;
+    padding: 40px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.51);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+    transform: translate(-3%);
+}
+
+.card-1-text h3 {
+    font-size: 14px;
+}
+
+.card-1-text h2 {
+    margin: 20px 0 40px 0;
+    font-size: 40px;
+}
+
+.card-1-text p {
+    margin-bottom: 40px;
+}
+
+.card-1-text a {
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+/* card 2 e 3 */
+.card-2,
+.card-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #E5E5E5;
+    padding: 50px 0;
+}
+
+.card-3 {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+}
+
+.card-2-image,
+.card-3-image {
+    width: 50%;
+    min-height: 800px;
+    background-image: url(img/bg-card-2.jpg);
+}
+
+.card-2-text,
+.card-3-text {
+    background-color: #ffffff;
+    width: 50%;
+}
+
+.text-card {
+    padding: 60px;
+    margin: 90px 0;
+}
+
+.text-card h3,
+.text-card h3 {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.text-card h2,
+.text-card h2 {
+    margin: 20px 0 40px 0;
+    font-size: 32px;
+}
+
+.text-card p:last-of-type,
+.text-card p:last-of-type {
+    margin: 40px 0;
+}
+
+.text-card a,
+.card-3 a {
+    width: 169.29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 14px;
+}
+
+/* footer */
+
+/* carosello */
+.main-carosello {
+    background-color: #E5E5E5;
+    margin-bottom: 90px;
+}
+
+.carosello {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carosello-item {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 40px 60px;
+    width: 16, 66666666666667%;
+    background-color: #E5E5E5;
+    text-align: center;
+}
+
+.carosello-item svg {
+    display: block;
+    margin: auto;
+}
+
+/* opzioni generali: iscrizione, help, company */
+.container-iscrizione {
+    padding: 0 60px;
+}
+
+.container-iscrizione,
+.option {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.iscrizione {
+    padding: 0 40px;
+    width: 50%;
+}
+
+.iscrizione h2 {
+    font-size: 24px;
+}
+
+#email {
+    font-size: 16px;
+    width: 80%;
+    height: 40px;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    margin-top: 60px;
+}
+
+.iscrizione-email button {
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #9D9D9D;
+    border: 0;
+    padding: 15px 30px;
+}
+
+.iscrizione-text {
+    font-size: 10px;
+    color: #9D9D9D;
+    margin-top: 40px;
+}
+
+/* option */
+.option {
+    width: 50%
+}
+
+.help,
+.company {
+    list-style-type: none;
+    font-size: 16px;
+    width: 50%;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.help-item-title,
+.company-item-title {
+    font-weight: bold;
+}
+
+.help li,
+.company li {
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+.help-item,
+.company-item {
+    padding-left: 26px;
+}
+
+.help a>svg,
+.company a>svg {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* icone social media */
+.social-icone {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 1.5%;
+    margin: 90px 0;
+}
+
+/* termini e condizioni, cookies policy footer */
+.banner-footer,
+.item-banner-foot {
+    font-size: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+    padding: 10px;
+}
+
+.item-banner-foot {
+    padding: 0;
+}
+
+.item-banner-foot a {
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+
+/* media query */
+@media screen and (max-width: 768px) {
+
+    /* nav */
+    .nav-item {
+        margin: 0;
+        gap: 20px;
+    }
+
+    .hidden-nav-item {
+        display: none;
+    }
+
+    nav .nav-item-icone {
+        display: block;
+    }
+
+    /* card 1 */
+    .card-1-image {
+        max-height: 375px;
+    }
+
+    .card-1-text {
+        text-align: center;
+        width: 100%;
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0;
+        padding: 10px;
+    }
+
+    .card-1-text p {
+        display: none;
+    }
+
+    .card-1-text a {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* card 2- card 3 */
+    .card-2,
+    .card-3 {
+        padding: 10px 0;
+    }
+
+    .card-2-image,
+    .card-2-text,
+    .card-3-image,
+    .card-3-text {
+        width: 100%;
+    }
+
+    .text-card {
+        margin: 0;
+        padding: 30px;
+    }
+
+    .text-card p:last-of-type,
+    .text-card p:last-of-type {
+        margin: 0 0 20px 0;
+    }
+
+    /* .carosello */
+    .carosello {
+        max-width: 375px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .carosello::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* iscrizione */
+    .container-iscrizione {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+
+    }
+
+    .iscrizione {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #email {
+        width: 100%;
+        height: 50px;
+        padding: 0 10px;
+    }
+
+    .iscrizione-email button {
+        margin-top: 40px;
+    }
+
+    .iscrizione-text {
+        margin-top: 20px;
+    }
+
+    .option {
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .help,
+    .company {
+        width: 100%;
+        background-color: #F5F5F5;
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .help a>svg,
+    .company a>svg {
+        display: block;
+    }
+
+    /* accordion */
+    #help-collapse,
+    #company-collapse {}
+
+    .none {
+        display: none;
+    }
+
+    .show-item {
+        display: block;
+    }
+
+
+    /* social icone */
+    .social-icone {
+        margin: 60px 0;
+    }
+
+    /* banner footer */
+    .banner-footer {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .item-banner-foot {
+        margin-top: 5px;
+    }
+
+
+}

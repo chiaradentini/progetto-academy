@@ -1,0 +1,93 @@
+// variables
+@import "variables";
+
+// mixins
+@import "mixin";
+
+/* header */
+.banner-discount {
+    background-color: $color-bg-banner;
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+
+    a {
+        text-decoration: $reset-basic;
+        color: $color-text-1;
+        margin-right: 24px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    button {
+        background-color: $color-bg-banner;
+        border: 0;
+        position: absolute;
+        right: 12px;
+    }
+}
+
+/* navbar */
+
+nav {
+    font-size: 18px;
+    position: relative;
+    margin: 10px 0;
+
+    .nav-item {
+        margin: 0px 80px;
+        padding: 20px;
+        list-style-type: $reset-basic;
+        display: flex;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .nav-item-text {
+        @include ancor-style($color-text-2);
+        font-weight: bold;
+    }
+
+    .nav-item-icone {
+        svg {
+            display: $reset-basic;
+        }
+    }
+
+    div {
+        padding: 20px;
+        border: 2px dashed #808080;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+
+    /* nav */
+
+    nav {
+        .nav-item {
+            margin: 0;
+            gap: 20px;
+        }
+
+        .hidden-nav-item {
+            display: none;
+        }
+
+        .nav-item-icone svg {
+            display: block;
+        }
+    }
+
+    .title-catalogo {
+        text-align: left;
+        padding: 20px;
+        font-size: 32px;
+    }
+
+}
